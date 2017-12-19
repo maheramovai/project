@@ -1,0 +1,20 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Code</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+        <form #codeForm="ngForm" (ngSubmit)="verifyCode(codeForm)">
+          <ion-item>
+            <ion-label floating>Code</ion-label>
+            <ion-input type="number" name="code" [(ngModel)]="code"></ion-input>
+          </ion-item>
+          <button ion-button full type="submit">Verify Code</button>
+        </form>
+        <div id="re-container"></div>
+</ion-content>
